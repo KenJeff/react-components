@@ -17,6 +17,9 @@ export default function CountdownTimer() {
     <>
       <h1>{count}</h1>
       {count === 0 && <p>Time is up!</p>}
+      <div className="spinner-border " role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
     </>
   );
 }
